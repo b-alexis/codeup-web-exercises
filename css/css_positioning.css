@@ -1,0 +1,53 @@
+
+.fancy-header{color:purple;
+text-decoration:underline;
+}
+
+img.align-right{float:right;
+display:block;}
+
+.box { border-style:solid;
+border-width: 1px;
+height:50px;
+width:50px;
+padding:10px;
+margin:20px;
+float:left;
+position:relative;
+    color:white;
+}
+div:nth-child(odd){
+    clear:left;
+
+
+}
+
+.box>img{position:absolute;
+top:-40px;
+right:-40px;
+}
+
+#box1{
+    background-color:red;
+}
+
+#box2{
+    background-color:orange;
+}
+
+#box3{
+    background-color:yellow;
+
+}
+
+#box4{
+    background-color:green;
+}
+
+#box5{
+    background-color:blue;
+
+}
+#box6{
+    background-color:violet;
+}
