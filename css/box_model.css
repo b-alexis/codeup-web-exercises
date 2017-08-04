@@ -1,0 +1,40 @@
+.purple-header{color:#613096;
+    text-decoration:underline;
+}
+.box{
+    border:1px solid#000;
+    Width:150px;
+    Height:50px;
+    Padding:10px;
+    Font-wieght:bold;
+    Color:#fff;
+    Margin-bottom:10px
+}
+
+#red-box{
+    Background-color:red;
+}
+
+#orange-box{
+    Background-color:orange;
+    Margin-left:30px;
+}
+
+#yellow-box {
+    Background-color: yellow;
+    Margin-left: 60px;
+}
+
+#green-box {
+    background-color: #578c05;
+    margin-left: 90px;
+}
+
+#blue-box{
+    background-color:blue;
+    margin-left:120px;
+}
+#purple-box{
+    background-color:#df8bf0;
+    margin-left:150px;
+}

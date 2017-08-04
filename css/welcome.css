@@ -1,0 +1,38 @@
+.fancy-header{color:#517099;
+text-align:center;
+    text-decoration:underline;
+    text-transform:uppercase;
+    letter-spacing:0.2em;
+}
+
+div{font-family: sans-serif;
+}
+
+.header{
+    color:#21354f;
+    text-decoration:underline;
+}
+
+body {@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+background-color:#e6eaef;
+background-image:url(../img/marble.jpg);
+    text-align:center;
+}
+
+ul ol{
+    list-style-type:square;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+th,td{
+    border-bottom: 1px solid #304054;
+    padding: 15px;
+    text-align: right;
+}
+
+#table-title {
+    text-transform:uppercase;}
+
+.border-radius{border:50px;}
