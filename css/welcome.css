@@ -23,8 +23,7 @@ background-image:url(../img/marble.jpg);
 ul ol{
     list-style-type:square;
     display: inline-block;
-    *display: inline;
-    zoom: 1
+    text-align: center;
 }
 th,td{
     border-bottom: 1px solid #304054;

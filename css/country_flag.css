@@ -1,0 +1,5 @@
+.column-left{ width: 33%; background-color:orange; border:1px solid;}
+
+.column-right{width: 33%; background-color:white; border:1px solid;}
+
+.column-center{position:relative; width: 33%; background-color:green; border:1px solid;}
