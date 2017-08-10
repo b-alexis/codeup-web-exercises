@@ -5,9 +5,10 @@ h1 span{
     text-align: center;
     background:hsla(0, 100%, 90%, 0.3);
 }
-.jumbotron{
+.hero-pizza{
     position:relative;
     width:100%;
+    background-size:cover;
 }
 h2{text-align:center;
 color:grey;}
