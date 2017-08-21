@@ -7,7 +7,19 @@
 <body>
 <script>
     "use strict";
-    console.log("Hello from inline JavaScript")
+    for (var i =1; 1<=50; i++){
+        var numbers = Math.floor(Math.random () * 10) + i++;
+        if (numbers % 3 === 0)
+            console.log("fizz");
+            }
+            //I don't know if i'm on the right track...
+    // Not sure how to output the string representation of numbers..
+
+
+    function repeatStr(number) {
+        return "phrase" + (number)
+        //var phrase = Prompt("give me a phrase") //can we use prompts with functions?.....
+    }
   </script>
 </body>
 </html>
