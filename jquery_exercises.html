@@ -5,12 +5,34 @@
     <title>Title</title>
 </head>
 <body>
+<h1 class="codeup">Learning to code</h1>
+<p class="codeup">Learning to code with no previous coding background has been challenging, and rewarding </p>
+<div id="ref">List of items I've learned thus far:</div>
+<ul id="listed">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>jquery</li>
+</ul>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script
+        src="js/jquery-2.2.4.js">
+</script>
 <script>
     "use strict";
-    $(document).ready(function(){
-        alert("Hi there");
+    $(document).ready(function () {
+        //    alert("Hi there");
+
+        //var contents = $('#listed').html();
+        //alert(contents);
+
+        //$('.codeup').css('border','1px solid red');
+
+        $('li').css('font-size', '20px');
+        //$('h1, p, li').css('background-color','yellow');
+
+        var statement = $('h1').html();
+        alert(statement);
     });
 </script>
 </body>
