@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery FAQs</title>
+    <style>
+        .invisible {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>National Park FAQs</h1>
+<dl>
+    <dt>Redwood National Park </dt>
+    <dd class="invisible">old growth temperate rainforest in northern California</dd>
+    <dt>Carlsbad Caverns National Park</dt>
+    <dd class="invisible">natural limestone cave located in Southeastern New Mexico</dd>
+    <dt>Yellowstone National Park</dt>
+    <dd class="invisible">Known for its wildlife & many types of ecosystems, located in the north western part of the United States</dd>
+    <dt>Grand Canyon National Park</dt>
+    <dd class="invisible">Extensive system of tributary canyons</dd>
+    <dt>Glacier National Park</dt>
+    <dd class="invisible">over 1 Million acres of mountain ranges, land , & lakes with over 1,000 species of plants, and hundreds of species of animals</dd>
+    <dt>Acadia National Park</dt>
+    <dd class="invisible">Reserves much of mount desert island and associated smaller islands off the atlantic coast</dd>
+    <dt>Mesa Verde National Park</dt>
+    <dd class="invisible">Holds more that 4,300 sites including 600 cliff dwellings, it is the largest archaeological preserve in the U.S. </dd>
+    <dt>Everglades National Park</dt>
+    <dd class="invisible">WEtlands and forests fed by a river</dd>
+    <dt>Sequoia National Park</dt>
+    <dd class="invisible">Famous for its giant Sequoia trees, including the General Sherman tree, the largest tree on Earth.</dd>
+    <dt>Hawai'i Volcanoes National Park</dt>
+    <dd class="invisible">On the island of Hawaii, It encompasses two active volcanoes</dd>
+</dl>
+<a href="#" id="reveal">Click for FAQs</a>
+<script
+    src="js/jquery-2.2.4.js">
+</script>
+<script>
+    "use strict";
+$(document).ready(function(){
+    $("#reveal").click(function(){
+        $("dd").toggleClass("invisible");
+    });
+})
+
+</script>
+</body>
+</html>
