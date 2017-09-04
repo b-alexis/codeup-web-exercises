@@ -34,16 +34,43 @@
     <dd class="invisible">On the island of Hawaii, It encompasses two active volcanoes</dd>
 </dl>
 <a href="#" id="reveal">Click for FAQs</a>
+
+<h1>State Parks of Texas</h1>
+<h3>Big Bend</h3>
+<ul id="texasState">
+    <li>Located in west Texas</li>
+    <li>Borders Mexico</li>
+    <li>Covers over 800,000 acres</li>
+</ul>
+<h3>Davis Mountains</h3>
+<ul id="texas-1">
+    <li>named in honor to Jefferson Davis</li>
+    <li>The mountains are of Volcanic origin</li>
+    <li>highest peak is Mount Livermore at 8,382ft</li>
+</ul>
+<h3>Enchanted Rock</h3>
+<ul id="tx-2">
+    <li>is an enormous pink granite pluton batholith</li>
+    <li> It is the largest such pink granite monadnock in the United States</li>
+    <li>Enchanted Rock was rated in 2017 as the best campsite in Texas in a 50-state survey conducted by Msn.com</li>
+</ul>
+<button id="highlight">Highlight</button>
 <script
     src="js/jquery-2.2.4.js">
 </script>
 <script>
     "use strict";
 $(document).ready(function(){
-    $("#reveal").click(function(){
-        $("dd").toggleClass("invisible");
+    $('#reveal').click(function(){
+        $('dd').toggleClass("invisible");
     });
-})
+});
+    $(function(){
+        $("#highlight").click(function(){
+            $("#texasState").children().css("background-color:", "red");
+
+        })
+    });
 
 </script>
 </body>
