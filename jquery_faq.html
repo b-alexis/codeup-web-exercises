@@ -12,24 +12,33 @@
 <body>
 <h1>National Park FAQs</h1>
 <dl>
-    <dt>Redwood National Park </dt>
+    <dt>Redwood National Park</dt>
     <dd class="invisible">old growth temperate rainforest in northern California</dd>
     <dt>Carlsbad Caverns National Park</dt>
     <dd class="invisible">natural limestone cave located in Southeastern New Mexico</dd>
     <dt>Yellowstone National Park</dt>
-    <dd class="invisible">Known for its wildlife & many types of ecosystems, located in the north western part of the United States</dd>
+    <dd class="invisible">Known for its wildlife & many types of ecosystems, located in the north western part of the
+        United States
+    </dd>
     <dt>Grand Canyon National Park</dt>
     <dd class="invisible">Extensive system of tributary canyons</dd>
     <dt>Glacier National Park</dt>
-    <dd class="invisible">over 1 Million acres of mountain ranges, land , & lakes with over 1,000 species of plants, and hundreds of species of animals</dd>
+    <dd class="invisible">over 1 Million acres of mountain ranges, land , & lakes with over 1,000 species of plants, and
+        hundreds of species of animals
+    </dd>
     <dt>Acadia National Park</dt>
-    <dd class="invisible">Reserves much of mount desert island and associated smaller islands off the atlantic coast</dd>
+    <dd class="invisible">Reserves much of mount desert island and associated smaller islands off the atlantic coast
+    </dd>
     <dt>Mesa Verde National Park</dt>
-    <dd class="invisible">Holds more that 4,300 sites including 600 cliff dwellings, it is the largest archaeological preserve in the U.S. </dd>
+    <dd class="invisible">Holds more that 4,300 sites including 600 cliff dwellings, it is the largest archaeological
+        preserve in the U.S.
+    </dd>
     <dt>Everglades National Park</dt>
     <dd class="invisible">WEtlands and forests fed by a river</dd>
     <dt>Sequoia National Park</dt>
-    <dd class="invisible">Famous for its giant Sequoia trees, including the General Sherman tree, the largest tree on Earth.</dd>
+    <dd class="invisible">Famous for its giant Sequoia trees, including the General Sherman tree, the largest tree on
+        Earth.
+    </dd>
     <dt>Hawai'i Volcanoes National Park</dt>
     <dd class="invisible">On the island of Hawaii, It encompasses two active volcanoes</dd>
 </dl>
@@ -37,40 +46,66 @@
 
 <h1>State Parks of Texas</h1>
 <h3>Big Bend</h3>
-<ul id="texasState">
+<ul id="tx">
     <li>Located in west Texas</li>
     <li>Borders Mexico</li>
     <li>Covers over 800,000 acres</li>
 </ul>
 <h3>Davis Mountains</h3>
-<ul id="texas-1">
+<ul id="tx">
     <li>named in honor to Jefferson Davis</li>
     <li>The mountains are of Volcanic origin</li>
     <li>highest peak is Mount Livermore at 8,382ft</li>
 </ul>
 <h3>Enchanted Rock</h3>
-<ul id="tx-2">
+<ul id="tx">
     <li>is an enormous pink granite pluton batholith</li>
     <li> It is the largest such pink granite monadnock in the United States</li>
     <li>Enchanted Rock was rated in 2017 as the best campsite in Texas in a 50-state survey conducted by Msn.com</li>
 </ul>
 <button id="highlight">Highlight</button>
+
+<div></div>
+<button></button>
+<div></div>
+<button></button>
+<div></div>
+<button></button>
+
+
+
 <script
-    src="js/jquery-2.2.4.js">
+        src="js/jquery-2.2.4.js">
 </script>
 <script>
     "use strict";
-$(document).ready(function(){
-    $('#reveal').click(function(){
-        $('dd').toggleClass("invisible");
-    });
-});
-    $(function(){
-        $("#highlight").click(function(){
-            $("#texasState").children().css("background-color:", "red");
+    $(document).ready(function () {
+        $("#reveal").click(function () {
+            $("dd").toggleClass("invisible");
+        });
 
+
+
+        $("#highlight").on("click", highlightAll);
+        function highlightAll() {
+            $("ul").each(highlightAll);
+
+            function highlightAll() {
+                $(this).children().last().css("background-color", "yellow");
+            }
+        }
+
+
+        //Do the same!!
+        $("h3").click(function () {
+            $("ul").children().css("font-weight", "bold");
+        });
+
+        //Do the same!!
+        $("li").click(function () {
+            $("ul").children().first().css("color", "blue");
         })
-    });
+    })
 
 </script>
 </body>
