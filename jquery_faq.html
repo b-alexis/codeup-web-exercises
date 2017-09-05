@@ -7,9 +7,16 @@
         .invisible {
             display: none;
         }
+        #tx {
+            display:none;
+        }
     </style>
 </head>
 <body>
+<div class="news">
+    <h1>Would you like to sign for our newsletter? you'll love it!!</h1>
+    <span class="noThanks">X</span>
+</div>
 <h1>National Park FAQs</h1>
 <dl>
     <dt>Redwood National Park</dt>
@@ -73,7 +80,6 @@
 <button></button>
 
 
-
 <script
         src="js/jquery-2.2.4.js">
 </script>
@@ -85,8 +91,8 @@
         });
 
 
-
         $("#highlight").on("click", highlightAll);
+
         function highlightAll() {
             $("ul").each(highlightAll);
 
@@ -107,6 +113,24 @@
         })
     })
 
+</script>
+<script>
+    "use strict";
+    $(document).ready(function () {
+        $(".noThanks").bind("click", hideDiv);
+        function hideDiv(){
+            $(".noThanks").parent("div").hide(500);
+        }
+
+        $("h3").bind("click", reveal);
+        function reveal() {
+            $("h3").each(reveal);
+            function reveal() {
+                $(this).next().slideToggle("ul")
+            }
+        }
+
+    });
 </script>
 </body>
 </html>
