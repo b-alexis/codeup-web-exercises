@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 class="codeup">Learning to code</h1>
+<p class="codeup">Learning to code with no previous coding background has been challenging, and rewarding </p>
+<div id="ref">List of items I've learned thus far:</div>
+<ul id="listed">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>jquery</li>
+</ul>
+
+<script
+        src="js/jquery-2.2.4.js">
+</script>
+<script>
+    "use strict";
+    (function () {
+
+
+       $("h1").click(function(){
+            $(this).css("background-color","red");
+           });
+
+
+        $("p").dblclick(function(){
+           $(this).css("font-size", "18px");
+        });
+
+        $("li").hover(function() {
+            $(this).css("background-color", "green");
+        },
+            function(){
+                $(this).css("background-color","black");
+
+        })
+
+        })();
+
+
+
+
+
+
+</script>
+</body>
+</html>

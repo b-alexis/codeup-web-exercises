@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+
+<script
+        src="js/jquery-2.2.4.js">
+</script>
+<script>
+    "use strict";
+
+    var code = [38,38,40,40,37,39,37,39,66,65,13];
+
+    var index = 0;
+
+    $(document).keyup(function(event) {
+        console.log(event.keyCode);
+            if (event.keyCode === code[index]){
+                index++;
+//
+                if (index === code.length)
+                    alert("30 lives!");
+
+    } else {
+                index = 0;
+                alert("wrong")
+            }
+
+    });
+</script>
+
+</body>
+</html>
