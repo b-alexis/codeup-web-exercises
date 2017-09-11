@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>objects intro</title>
+</head>
+<body>
+<script>
+    <!--src="js/objects.js">-->
+
+    "use strict";
+
+    // todo:
+    // Create an array of objects that represent books.
+    // Each book should have a title and an author property.
+    // The author property should be an object with a firstName and lastName.
+    // Be creative and add at least 5 books to the array
+     var books = [
+         {
+             title: "Be obsessed or be average",
+             author:
+                 {
+                     firstName: "Grant",
+                     lastName: "Cardone"
+                 } },
+
+         {
+             title: "JavaScript and jquery",
+             author:
+                 {
+                     firstName: "Jon",
+                     lastName: "Duckett"
+
+                 } },
+         {
+
+            title: "The 10X Rule",
+             author:
+                 {
+                     firstName: "Grant",
+                     lastName: "Cardone"
+
+                 } },
+
+         {
+
+             title: "Oh the places you/'ll go ",
+             author:
+                 {
+                     firstName: "Dr",
+                     lastName: "Seuss"
+                 } },
+
+         {
+
+             title: "The wonderful things you will be",
+             author:
+                 {
+                     firstNAme:"Emily",
+                     lastName: "Martin"
+
+             }
+    }
+
+
+     ];
+
+    //var books = ("Be obsessed or be average" , "javaScript and jquery" , "The 10X Rule" , "Oh the places you/'ll go" , "The wonderful things you will be");
+    console.log(books);
+
+    books.forEach (function(book) {
+
+
+    // Loop through the array of books using .forEach and print out the specified information about each one.
+    // start loop here
+    console.log("Book #" + (i + 1));
+    console.log("Title: " + book.title);
+    console.log("Author: " + book.author.firstName + book.lastName);
+    console.log("---");
+    // end loop here
+    });
+</script>
+</body>
+</html>
